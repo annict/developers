@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    /! Use title if it's in the page YAML frontmatter
+    title = data.page.title || "The Middleman"
+
+    == stylesheet_link_tag "application", "all"
+    == javascript_include_tag  "all"
+
+  body class="#{page_classes}"
+    header
+      .navbar
+        .logo
+          = image_tag "logo.jpg", size: "35x35", alt: "Annict"
+        span.sub-title Docs
+    
+    = yield
+    
+    footer
+      | 2014-2015 Annict
