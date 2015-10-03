@@ -65,3 +65,16 @@ footer {
   padding: 50px 0;
   text-align: center;
 }
+
+.highlight {
+  border-radius: 4px;
+  border: 1px solid $color-light;
+  overflow-x: auto;
+
+  code {
+    display: block;
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+    font-size: 16px;
+    padding: 15px;
+  }
+}
