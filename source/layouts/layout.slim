@@ -13,10 +13,13 @@ html
 
   body class="#{page_classes}"
     header
-      .navbar
-        .logo
-          = image_tag "logo.jpg", size: "35x35", alt: "Annict"
-        span.sub-title Docs
+      nav.navbar
+        .navbar-left
+          h1 = link_to "Annict Docs", "/"
+        .navbar-right
+          .logo
+            = link_to "https://annict.com", target: "_blank" do
+              = image_tag "logo.jpg", width: "30", height: "30", alt: "Annict"
     
     = yield
     

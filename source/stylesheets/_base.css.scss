@@ -27,3 +27,41 @@ a {
     text-decoration: underline;
   }
 }
+
+header {
+  background-color: $color-dark;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 40px;
+
+  nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  nav.navbar .navbar-left h1 {
+    font-size: 20px;
+    margin: 0;
+
+    a {
+      color: #ffffff;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  nav.navbar .navbar-right img {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+footer {
+  border-top: solid 1px $color-light;
+  padding: 50px 0;
+  text-align: center;
+}
