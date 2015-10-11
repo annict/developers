@@ -1,9 +1,9 @@
-## Annict Docs
+## Annict Developers
 
 ### ローカル環境で動かす
 
 ```
-$ cd docs
+$ cd developers
 $ bundle
 $ bundle exec middleman s
 ```
