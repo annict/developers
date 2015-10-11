@@ -78,3 +78,15 @@ footer {
     padding: 15px;
   }
 }
+
+a.anchorable-toc-anchor {
+  font-size: 15px;
+  margin-left: -22px;
+  opacity: 0.5;
+  padding-right: 8px;
+  text-decoration: none;
+
+  i {
+    visibility: hidden;
+  }
+}

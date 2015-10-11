@@ -6,16 +6,16 @@ html
     meta name="viewport" content="width=device-width, initial-scale=1"
 
     /! Use title if it's in the page YAML frontmatter
-    title = data.page.title || "The Middleman"
+    title = data.page.title || "Annict Developers"
 
-    == stylesheet_link_tag "application", "all"
-    == javascript_include_tag  "all"
+    == stylesheet_link_tag "application"
+    == javascript_include_tag "application"
 
   body class="#{page_classes}"
     header
       nav.navbar
         .navbar-left
-          h1 = link_to "Annict Docs", "/"
+          h1 = link_to "Annict Developers", "/"
         .navbar-right
           .logo
             = link_to "https://annict.com", target: "_blank" do
